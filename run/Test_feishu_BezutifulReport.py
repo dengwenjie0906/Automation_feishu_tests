@@ -3,12 +3,9 @@ base=os.path.dirname(os.path.dirname(os.path.dirname(__file__))).replace("\\","/
 sys.path.append(base)
 from BeautifulReport  import BeautifulReport
 from tomorrow import threads
-from common.element import *
 
 casepath = os.path.abspath(base+"/scripts").replace("\\","/")  # 存在脚本的路径
 reportpath=os.path.abspath(base+"/report").replace("\\","/")  #报告路径
-
-
 
 def add_case(case_path=casepath, rule="test_*.py"):
     '''加载所有的测试用例'''
