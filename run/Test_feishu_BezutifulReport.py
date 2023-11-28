@@ -1,5 +1,5 @@
 import sys,os,unittest
-base=os.path.dirname(os.path.dirname(os.path.dirname(__file__))).replace("\\","/")
+base=os.path.dirname(os.path.dirname(__file__)).replace("\\","/")
 sys.path.append(base)
 from BeautifulReport  import BeautifulReport
 from tomorrow import threads
